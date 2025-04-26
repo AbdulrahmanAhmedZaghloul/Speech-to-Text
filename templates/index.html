@@ -1,0 +1,83 @@
+<!-- index.html -->
+<!DOCTYPE html>
+
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACCESSIBILITY</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body class="text-center">
+
+    
+
+    <nav class="container-fluid p-2 border-bottom shadow-sm d-flex align-items-center justify-content-between">
+          
+        <div class="d-flex p-1 justify-content-start align-items-center">
+            <span class="dark-p">ACCESSIBILITY</span>
+            <img src="/static/image/istockphoto-1268414791-612x612.png" class="w30" alt="">
+        </div>
+
+
+    <ul class="nav nav-pills me-auto d-flex justify-content-center align-items-center">
+        <li class="nav-item dark-p">
+            <a class="dark-p text-decoration-none" href="/">home</a>
+        </li>
+        <li class="nav-item dark-p">
+            <a class="dark-p text-decoration-none" href="/about">About</a>
+        </li> 
+    </ul>
+
+    <div class="text-end">
+        <button id="theme-toggle" class="theme-btn position-sticky mx-5 border-0 bg-transparent">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </div>
+
+</nav>
+
+    <p id="message" style="display: none;">
+        Application Real-time speech recognition tool designed to help the deaf and hard of hearing community
+    </p>
+
+
+    <div class="container mt-5">
+     
+        <!--  الضغظ على المايك -->
+
+        <button id="record-btn" class="border border-1 px-3 py-2 bg-transparent rounded-5">
+            <i class="fa-solid fa-microphone"></i>
+        </button>
+
+        <div id="loading" class="mt-3 dark-p" style="display: none;">
+            speak Now
+        </div>
+        <!--   الكلام اللى بيظهر لم بكلام -->
+        <div id="result-box" class="container shadow-sm mt-4 p-3" style="display: none;">
+            <p id="result" class="text-center dark-p"></p>
+        </div>
+        <!-- عند الخذف يظهر وبعد 5ثوانى تختفى -->
+        <div id="delete-notification" class="d-none top-5 right-5 bg-green-500 px-4 py-2 rounded shadow-lg">
+            <p id="dark-p-p" class="dark-p">تم الحذف بنجاح</p>
+        </div>
+
+        <!-- ✅ هنا سيتم عرض النصوص مباشرةً وسيتم تحديثها عبر JavaScript -->
+        <div class="done mt-4">
+            <div id="texts-list" class="texts-grid">
+                <!-- سيتم تحديث المحتوى هنا من JavaScript بدون createElement -->
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/static/scripts.js"></script>
+    <script src="/static/speechRecognition.js"></script>
+    <script src="/static/darkMood.js"></script>
+</body>
+
+</html>

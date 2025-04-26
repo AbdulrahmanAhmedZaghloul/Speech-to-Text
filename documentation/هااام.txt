@@ -1,0 +1,13 @@
+pip install -r requirements.txt
+
+امر تثبيت المكتبات
+
+______________________
+
+python.exe -m pip install --upgrade pip
+ل مرة تستخدم pip على جهازك
+______________________
+
+python app.py
+
+امر تشغيل المشروع

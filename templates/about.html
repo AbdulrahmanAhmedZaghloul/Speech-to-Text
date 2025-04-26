@@ -1,0 +1,150 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>من نحن - ACCESSIBILITY</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="text-center">
+
+    <nav class="container-fluid p-2 border-bottom shadow-sm d-flex align-items-center justify-content-between">
+
+        <div class="d-flex p-1 justify-content-start align-items-center">
+            <span class="dark-p">ACCESSIBILITY</span>
+            <img src="/static/image/istockphoto-1268414791-612x612.png" class="w30" alt="">
+        </div>
+
+
+        <ul class="nav  ms-auto d-flex justify-content-center align-items-center">
+            <li class="nav-item dark-p">
+                <a class="dark-p" href="/about">About</a>
+            </li>
+        
+            <li class="nav-item dark-p">
+                <a class="dark-p" href="/">home</a>
+            </li>
+        
+        </ul>
+
+        <div class="text-end">
+            <button id="theme-toggle" class="theme-btn position-sticky mx-5 border-0 bg-transparent">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+
+    </nav>
+    
+    <div class="container mt-5">
+        <h1 class="dark-p mb-5">من نحن</h1>
+
+        <!-- عن المشروع -->
+        <div class="about-section p-4 mb-5 border rounded">
+            <h2 class="dark-p mb-3">عن المشروع</h2>
+            <p class="dark-p text-justify">
+                تطبيق ويب لتحويل الصوت إلى كلام مكتوب مصمم لمساعدة الأشخاص ذوي الإعاقات السمعية.
+                يهدف التطبيق إلى تحسين التواصل وتوفير حلول مبتكرة لضمان الشمولية الرقمية.
+                يعمل التطبيق على تحويل الكلام إلى نصوص مكتوبة وحفظها في قاعدة بيانات للرجوع إليها لاحقًا.
+            </p>
+        </div>
+
+        <!-- فريق العمل -->
+        <div class="team-section p-4 mb-5 border rounded">
+            <h2 class="dark-p mb-3">فريق العمل</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <ul class="list-group text-center">
+                        <li class="list-group-item dark-p">1- عبدالرحمن احمد زغلول</li>
+                        <li class="list-group-item dark-p">2- عبدالله ممدوح ثابت</li>
+                        <li class="list-group-item dark-p">3- أحمد خالد نبيل</li>
+                        <li class="list-group-item dark-p">4- عمر تامر فتحي</li>
+                        <li class="list-group-item dark-p">5- ابراهيم محمد امام</li>
+                        <li class="list-group-item dark-p">6- عبدالله محمود اسماعيل</li>
+                        <li class="list-group-item dark-p">7- علي محمد سلطان</li>
+                        <li class="list-group-item dark-p">8- عبدالله مجدي</li>
+                        <li class="list-group-item dark-p">9- عمر احمد محمد</li>
+                        <li class="list-group-item dark-p">10- ضياء الشرف</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- التقنيات المستخدمة -->
+        <div class="tech-section p-4 mb-5 border rounded">
+            <h2 class="dark-p mb-3">التقنيات المستخدمة</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="tech-card p-3 border rounded">
+                        <i class="fab fa-html5 fa-3x mb-2 text-danger"></i>
+                        <h5 class="dark-p">HTML5</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="tech-card p-3 border rounded">
+                        <i class="fab fa-css3-alt fa-3x mb-2 text-primary"></i>
+                        <h5 class="dark-p">CSS3</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="tech-card p-3 border rounded">
+                        <i class="fab fa-js-square fa-3x mb-2 text-warning"></i>
+                        <h5 class="dark-p">JavaScript</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="tech-card p-3 border rounded">
+                        <i class="fab fa-python fa-3x mb-2 text-success"></i>
+                        <h5 class="dark-p">Python</h5>
+                    </div>
+                </div>
+            </div>
+            <p class="dark-p mt-3">
+                بالإضافة إلى: Flask, SQLite, Web Speech API
+            </p>
+        </div>
+
+        <!-- أهداف التطبيق -->
+        <div class="goals-section p-4 border rounded">
+            <h2 class="dark-p mb-3">أهداف التطبيق</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-3">
+                    <div class="goal-card p-3 border rounded h-100">
+                        <i class="fas fa-clock fa-2x mb-2 dark-p"></i>
+                        <h5 class="dark-p">توفير الوقت</h5>
+                        <p class="dark-p">تحويل المحادثات الصوتية إلى نصوص مكتوبة بسرعة ودقة</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="goal-card p-3 border rounded h-100">
+                        <i class="fas fa-universal-access fa-2x mb-2 dark-p"></i>
+                        <h5 class="dark-p">إمكانية الوصول</h5>
+                        <p class="dark-p">مساعدة ذوي الإعاقات السمعية على التواصل بفعالية</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="goal-card p-3 border rounded h-100">
+                        <i class="fas fa-database fa-2x mb-2 dark-p"></i>
+                        <h5 class="dark-p">التخزين الآمن</h5>
+                        <p class="dark-p">حفظ النصوص المحولة للرجوع إليها في أي وقت</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5 py-3 border-top">
+        <p class="dark-p">جميع الحقوق محفوظة &copy; 2025 - ACCESSIBILITY</p>
+        <p class="dark-p">المشرف: الدكتور / خالد صادق</p>
+    </footer>
+    <script src="/static/darkMood.js"></script>
+
+    <!-- <script src="/static/scripts.js"></script> -->
+</body>
+
+</html>

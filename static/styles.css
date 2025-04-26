@@ -1,0 +1,280 @@
+/* 
+styles.css
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: #ffffff;
+    color: #111111;
+    transition: all 0.3s, color 0.3s;
+    overflow-x: hidden;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.dark-mode {
+    background-color: #242323;
+    color: #ffffff;
+}
+
+/*  button them dark-mode */
+.theme-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+body.dark-mode {
+    background-color: #242323;
+    color: #ffffff;
+}
+
+.theme-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.Deaf {
+    font-style: italic;
+    font-size: 2rem;
+    letter-spacing: 20px;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
+}
+
+.w30{
+    width: 7%;
+    transform: scaleX(-1);
+}
+
+.p-id {
+    text-decoration: underline;
+}
+
+.image-width {
+    width: 7%;
+}
+
+.Speak {
+    letter-spacing: 10px;
+}
+
+/* 
+button microphone record-btn 
+*/
+
+#record-btn {
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in-out;
+    border-color: rgb(131, 131, 131) !important;
+}
+
+#record-btn i {
+    color: rgb(131, 131, 131);
+}
+
+#message {
+    position: fixed;
+    top: 50%;
+    left: 80%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    letter-spacing: 4px;
+
+}
+
+/* 
+ result-box 
+*/
+
+.result-box {
+    font-size: 1.5rem;
+    margin: auto;
+    border-radius: 2%;
+}
+
+
+.Real {
+    letter-spacing: 2px;
+}
+
+
+.texts-grid {
+    direction: rtl;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+}
+
+.texts-grid .text {
+    width: 25%;
+    padding: 10px;
+}
+
+#loading {
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+}
+
+#result-box {
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#record-btn {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.recording {
+    animation: pulse 1.5s infinite;
+}
+
+.nav-item a{
+    font-size: 1rem;
+     margin: 0 10px;
+    text-decoration: none;
+     transition: all 0.3s ease-in-out;
+ }
+
+/* styles.css - إضافة هذه الأنماط */
+
+/* أنماط زر اللغة */
+.language-btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.language-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .language-btn {
+    color: white;
+}
+
+body.dark-mode .language-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* تعديلات للوضع RTL/LTR */
+[dir="rtl"] .text-justify {
+    text-align: right;
+}
+
+[dir="ltr"] .text-justify {
+    text-align: left;
+}
+
+[dir="rtl"] .me-auto {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}
+
+[dir="rtl"] .text-end {
+    text-align: left !important;
+}
+
+[dir="ltr"] .text-end {
+    text-align: right !important;
+}
+
+/* تعديلات للقوائم */
+[dir="rtl"] .list-group-item {
+    text-align: right;
+}
+
+[dir="ltr"] .list-group-item {
+    text-align: left;
+}
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(255, 0, 0, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0); }
+}
+
+
+@media (max-width: 998px) {
+  /* القواعد التي سيتم تطبيقها عندما يكون عرض الشاشة 998 بكسل أو أقل */
+
+    #message {
+        width: 100%;
+    }
+
+    .Deaf {
+        font-size: 1.7rem;
+        letter-spacing: 5px;
+    }
+    .texts-grid .text {
+        margin: auto;
+        width: 33%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+  /* القواعد التي سيتم تطبيقها عندما يكون عرض الشاشة 800 بكسل أو أقل */
+
+    #message {
+        width: 100%;
+    }
+
+    .Deaf {
+        font-size: 1.7rem;
+        letter-spacing: 5px;
+    }
+    .texts-grid .text {
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    /* القواعد التي سيتم تطبيقها عندما يكون عرض الشاشة 700 بكسل أو أقل */
+
+    #message {
+        width: 100%;
+    }
+
+    .Deaf {
+        font-size: 1.7rem;
+        letter-spacing: 5px;
+    }
+    .texts-grid .text {
+        margin: auto;
+        width: 90%;
+        padding: 10px;
+    }
+}
